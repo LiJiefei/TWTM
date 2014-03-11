@@ -17,7 +17,7 @@ cd src/ && make <br/>
 
 Usage
 -------------------------------------------------------------
-Input file format: <br/>
+###Input file format: <br/>
 DocNumLabels label1 label2 ... @ DocNumWords word1 word2 ...<br/>
 DocNumLabels label1 label2 ... @ DocNumWords word1 word2 ...<br/>
 DocNumLabels label1 label2 ... @ DocNumWords word1 word2 ...<br/>
@@ -29,16 +29,16 @@ demo/label.txt is the label dictionary file. The word in row 1 means the label0.
 demo/words.dic is the word dictionary file.<br/>
 <br/>
 <br/>
-Training:<br/>
+###Training:<br/>
 ```
 ./twtm est <input data file> <setting.txt> <num_topics> <model save dir>
 ```
 Example: <br/>
 ```
-./src/twtm est demo/twtm.demo.input src/setting.txt 10 demo/model <br/>
+./src/twtm est demo/twtm.demo.input src/setting.txt 10 demo/model
 ```
 
-Inference:<br/>
+###Inference:<br/>
 There are two methods to inference a new document's topic distribution. <br/>
 One is still using the labels of new document to inference.<br/>
 ```
@@ -46,7 +46,7 @@ One is still using the labels of new document to inference.<br/>
 ```
 Example:  <br/>
 ```
-./src/twtm inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/ <br/>
+./src/twtm inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/
 ```
 
 One is just using the words of new document. So with the TWTM model, we can inference some new document without any label just like LDA model. <br/>
@@ -57,7 +57,7 @@ One is just using the words of new document. So with the TWTM model, we can infe
 
 Example: <br/>
 ```
-./src/twtm lda-inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/ <br/>
+./src/twtm lda-inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/
 ```
 
 
