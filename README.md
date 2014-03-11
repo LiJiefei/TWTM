@@ -31,20 +31,33 @@ demo/words.dic is the word dictionary file.<br/>
 <br/>
 Training:<br/>
 ```
-./twtm est <input data file> <setting.txt> <num_topics> <model save dir> <br/>
+./twtm est <input data file> <setting.txt> <num_topics> <model save dir>
 ```
-Example: ./src/twtm est demo/twtm.demo.input src/setting.txt 10 demo/model <br/>
+Example: <br/>
+```
+./src/twtm est demo/twtm.demo.input src/setting.txt 10 demo/model <br/>
+```
 
 Inference:<br/>
 There are two methods to inference a new document's topic distribution. <br/>
 One is still using the labels of new document to inference.<br/>
-
-./twtm inf <input data file> <setting.txt> <model dir> <prefix> <output dir> <br/>
-Example: ./src/twtm inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/ <br/>
+```
+./twtm inf <input data file> <setting.txt> <model dir> <prefix> <output dir>
+```
+Example:  <br/>
+```
+./src/twtm inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/ <br/>
+```
 
 One is just using the words of new document. So with the TWTM model, we can inference some new document without any label just like LDA model. <br/>
 
-./twtm lda-inf <input data file> <setting.txt> <model dir> <prefix> <output dir> <br/>
-Example: ./src/twtm lda-inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/ <br/>
+```
+./twtm lda-inf <input data file> <setting.txt> <model dir> <prefix> <output dir>
+```
+
+Example: <br/>
+```
+./src/twtm lda-inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/ <br/>
+```
 
 
