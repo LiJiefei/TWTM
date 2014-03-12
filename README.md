@@ -51,6 +51,7 @@ Example: <br/>
 ```
 ./src/twtm est demo/twtm.demo.input src/setting.txt 10 demo/model
 ```
+Some model training parameters are set in the file "setting.txt".
 
 ###Inference:<br/>
 There are two methods to inference a new document's topic distribution. <br/>
