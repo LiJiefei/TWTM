@@ -1,6 +1,6 @@
 export CC = gcc
 export CXX = g++
-export CFLAGS = -Wall -g -O3 -pthread
+export CFLAGS = -w -g -O3 -pthread
 
 INSTALL_PATH=bin/
 BIN = twtm
