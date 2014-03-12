@@ -63,7 +63,7 @@ Example:  <br/>
 ```
 ./src/twtm inf demo/twtm.demo.input src/setting.txt demo/model/ final demo/output/
 ```
-We can get the doc-topics-dis.txt file in <output dir>. The file indicates the topic distribution in <input data file>. The values in the file should be exp(.) so that we can konw that exact probablility.
+We can get the doc-topics-dis.txt file in output dir. The file indicates the topic distribution in input data file. The values in the file should be exp(.) so that we can konw that exact probablility.
 
 One is just using the words of new document. So with the TWTM model, we can inference some new document without any label just like LDA model. <br/>
 
