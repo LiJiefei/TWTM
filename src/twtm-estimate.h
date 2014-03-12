@@ -1,3 +1,9 @@
+/*============================================================================= 
+#  Author:          JiefeiLi
+#  Email:           lijiefei@mail2.sysu.edu.cn 
+#  School:          Sun Yat-sen University
+=============================================================================*/
+
 #ifndef SSLDA_ESTIMATE_H
 #define SSLDA_ESTIMATE_H
 

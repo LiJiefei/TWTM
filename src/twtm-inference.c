@@ -1,3 +1,9 @@
+/*============================================================================= 
+#  Author:          JiefeiLi
+#  Email:           lijiefei@mail2.sysu.edu.cn 
+#  School:          Sun Yat-sen University
+=============================================================================*/ 
+
 #include "twtm-inference.h"
 
 void inference_gamma(Document* doc, twtm_model* model) {
