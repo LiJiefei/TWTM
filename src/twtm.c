@@ -323,14 +323,6 @@ void begin_twtm(char* inputfile, char* settingfile,int num_topics, char* model_r
     delete[] corpus;
 }
 
-int sample_document(Document** corpus, int num_docs, double sample_ratio, Document** &sample_corpus) {
-    sample_corpus = new Document* [num_docs];
-    int sample_num_docs = 0;
-    for (int i = 0; i < num_docs; i++) {
-        if (util::random() <= sample_ratio) sample_corpus[sample_num_docs++] = corpus[i];
-    }
-    return sample_num_docs;
-}
 
 void infer_twtm(char* test_file, char* settingfile, char* model_root,char* prefix,char* out_dir=NULL) {
     setbuf(stdout,NULL);
