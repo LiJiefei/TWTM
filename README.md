@@ -3,7 +3,7 @@ Tag-Weighted Topic Model for Mining Semi-Structured Documents
 The code of http://dl.acm.org/citation.cfm?id=2540540 <br/>
 Author: Shuangyin Li, Jiefei Li, Rong Pan <br/>
 <br/>
-Any question about code please contact us by email lijiefei@mail2.sysu.edu.cn.<br/>
+Any question about code please contact us by email lijiefei AT mail2.sysu.edu.cn.<br/>
 
 
 License
@@ -59,8 +59,9 @@ One is still using the labels of new document to inference.<br/>
 ```
 Example:  <br/>
 ```
-./src/twtm inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/
+./src/twtm inf demo/twtm.demo.input src/setting.txt demo/model/ final demo/output/
 ```
+We can get the doc-topics-dis.txt file in <output dir>. The file indicates the topic distribution in <input data file>. The values in the file should be exp(.) so that we can konw that exact probablility.
 
 One is just using the words of new document. So with the TWTM model, we can inference some new document without any label just like LDA model. <br/>
 
@@ -70,7 +71,7 @@ One is just using the words of new document. So with the TWTM model, we can infe
 
 Example: <br/>
 ```
-./src/twtm lda-inf demo/twtm/demo.input src/setting.txt demo/model/ final demo/output/
+./src/twtm lda-inf demo/twtm.demo.input src/setting.txt demo/model/ final demo/output/
 ```
 
 
